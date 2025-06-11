@@ -136,6 +136,7 @@ func main() {
 		colorMode = conslogging.ForceColor
 		color.NoColor = false
 	}
+	
 	if envutil.IsTrue("NO_COLOR") {
 		colorMode = conslogging.NoColor
 		color.NoColor = true
@@ -160,4 +161,3 @@ func main() {
 	exitCode := earthly.Run(ctx, logging, startTime, lastSignal)
 	os.Exit(exitCode)
 }
-
