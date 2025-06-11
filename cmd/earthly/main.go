@@ -160,3 +160,4 @@ func main() {
 	exitCode := earthly.Run(ctx, logging, startTime, lastSignal)
 	os.Exit(exitCode)
 }
+
