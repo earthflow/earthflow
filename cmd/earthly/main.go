@@ -136,6 +136,7 @@ func main() {
 		colorMode = conslogging.ForceColor
 		color.NoColor = false
 	}
+	
 	if envutil.IsTrue("NO_COLOR") {
 		colorMode = conslogging.NoColor
 		color.NoColor = true
